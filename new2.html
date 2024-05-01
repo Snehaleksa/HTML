@@ -5,269 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        diV{
+        .main{
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
         body{
-            background-color: rgb(13, 13, 49);
+            background-color: rgb(37, 37, 66);
         }
         
-    
+        .ab{
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
         
-        
-        .a{
-            position: relative;
-            z-index: 2;
-            width: 150px;
-            height: 200px;
-            background-color: blueviolet;
-            border-radius: 10px;
-            top: 140px;
-            left: 300px;
-        }
-        .b{
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            height: 110px;
-            background-color:  rgb(18, 18, 139);
-            border-radius: 10px;
-            left: 316px;
-            top: 335px;
-
-        }
-        .c{
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            height: 60px;
-            background-color: orangered;
-            border-radius: 10px;
-            top: 150px;
-            left: 495px;
-            
-        }
-        .d{
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 120px;
-            background-color: rgb(18, 18, 139);
-            border-radius: 10px;
-            top: 170px;
-            left: 495px;
-        }
-        .e{
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 120px;
-            background-color: rgb(18, 18, 139);
-            border-radius: 10px;
-            left: 495px;
-            top: 323px;
-            
-        }
-        .f{
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            height: 60px;
-            background-color: rgb(95, 204, 95);
-            border-radius: 10px;
-            left: 495px;
-             top: 300px;
-        }
-        .g{
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 120px;
-            background-color: rgb(18, 18, 139);
-            border-radius: 10px;
-            top: 170px;
-            left: 665px;
-
-
-        }
-        .h{
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            height: 60px;
-            background-color: rgb(43, 195, 241);
-            border-radius: 10px;
-            left: 665px;
-            top: 150px;
-            
-            
-        }
-        .i{
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 120px;
-            background-color: rgb(18, 18, 139);
-            border-radius: 10px;
-            left: 665px;
-            top: 323px;
-
-        }
-        .j{
-            position: absolute;
-            z-index: 1;
-          width: 150px;
-            height: 60px;
-            background-color: rgb(138, 18, 138);
-            border-radius: 10px;
-            left: 665px;
-            top: 300px;
-        }
-        .k{
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 120px;
-            background-color: rgb(18, 18, 139);
-            border-radius: 10px;
-            top: 170px;
-            left: 840px;
-            
-            
-        }
-        .l{
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            height: 60px;
-            background-color: rgb(248, 86, 86);
-            border-radius: 10px;
-            top: 150px;
-            left: 840px;
-            
-        }
-        .m{
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 120px;
-            background-color: rgb(18, 18, 139);
-            border-radius: 10px;
-            top: 323px;
-            left: 840px;
-        }
-        .n{
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            height: 60px;
-            background-color: yellow;
-            border-radius: 10px;
-            left: 840px;
-            top: 300px;
-        }
         ul{
             position: absolute;
             list-style-type: none;
             color: white;
-            right: 80px;
-            top: 10px;
-            
-            
+            left: 2px;
+            bottom: 30px;
+            padding: 5px;
             
         }
-         
+        .a{
+            position: relative;
+            z-index: 2;
+        }
+        .b{
+            position: absolute;
+            z-index: 1;
+            bottom: 155px;
+            
+        }
+
+        
+        
+        
         
         
     </style>
+    
 </head>
 <body>
+<div class="main">
     
-    <div>
-        1<div>
-            <div class="a">
-                <h6 style="position: absolute;left: 15px;top: 85px;color: rgb(219, 207, 207);">Reporter</h6>
-                <h1 style="position: absolute;top: 100px;left: 15px;color: white;">Jeremy <br>Robson</h1>
-                <img style="position: absolute;left: 20px;top: 40px;border-radius: 50%;" src="img1.jpg" alt=""height="50px" width="50px">
+        <div class="ab">
+            <div class="a" style="height: 350px;width: 200px;background-color: violet;border-radius: 10px;">
+               <img style="border-radius: 50%;margin-left: 30px;margin-top: 70px;" src="img1.jpg" alt=""height="100px" width="100px">
+               <h6 style="color: white;margin-left: 30px;">Report</h6>
+               <h1 style="color: white;margin-left: 30px;">Jeremy <br>Robson</h1>
             </div>
-            <div class="b">
-            
+            <div class="b" style="height: 350px;width: 200px;background-color: darkblue;border-radius: 10px;">
                 <ul>
                     <li style="color: rgb(46, 45, 45);padding-bottom: 8px;">Daily</li>
                     <li style="color: white;padding-bottom: 8px;">Weekly</li>
-                    <li style="color: rgb(46, 45, 45);">Monthly</li>
+                    <li style="color: rgb(46, 45, 45);">Monthly<li>
                 </ul>
             </div>
-
         </div>
-        2<div>
-            2.1<div>
-                <div>
-                    <div class="c"></div>
-                    <div class="d">
-                        <h5 style="position: absolute;top: 1px;left: 10px;color: white;">Work</h5>
-                        <h1 style="position: absolute;left: 10px;top: 23px;color: white ;">32hrs</h1>
-                        <h6 style="position: absolute;left: 10px;top: 58px;color: rgb(219, 207, 207);">Last work-36hrs</h6>
+       
+        <div>
+            <div style="display: flex;flex-wrap: wrap;  gap: 20px;">
+                <div style="position: relative;">
+                    <div style="height: 200px;width: 200px;background-color: orange;border-radius: 10px;"></div>
+                    <div style="height: 200px;width: 200px;background-color: darkblue;border-radius: 10px;position: absolute;top: 40px;">
+                       <h5 style="color: white;margin-left: 15px;">Work</h5>
+                       <h1 style="color: white;margin-left: 15px;">32hrs</h1>
+                       <h6 style="color: white;margin-left: 15px;">Last week-36hrs</h6>
+                    
+                    
+</div>
+                </div>
+                <div style="position: relative;">
+                    <div style="height: 200px;width: 200px;background-color: aqua;border-radius: 10px;"></div>
+                    <div style="height: 200px;width: 200px;background-color: darkblue;border-radius: 10px;position: absolute;top: 40px;">
+                       <h5 style="color: white;margin-left: 15px;">Play</h5>
+                       <h1 style="color: white;margin-left: 15px;">10hrs</h1>
+                       <h6 style="color: white;margin-left: 15px;">Last week-8hrs</h6>
+                    
                     </div>
                 </div>
-                <div>
-                    <div class="e">
-                        <h5 style="position: absolute;top: 1px;left: 10px;color: white;">Exercise</h5>
-                        <h1 style="position: absolute;top: 23px;left: 10px;color: white;">4hrs</h1>
-                        <h6 style="position: absolute;top: 58px;left: 10px;color: rgb(219, 207, 207);">Last week-5hrs</h6>
-                    </div>
-                    <div class="f">
-                        
-
+                <div style="position: relative;">
+                    <div style="height: 200px;width: 200px;background-color: rgb(247, 86, 112);border-radius: 10px;"></div>
+                    <div style="height: 200px;width: 200px;background-color: darkblue;border-radius: 10px;position: absolute;top: 40px;">
+                       <h5 style="color: white;margin-left: 15px;">Study</h5>
+                       <h1 style="color: white;margin-left: 15px;">4hrs</h1>
+                       <h6 style="color: white;margin-left: 15px;">Last week-7hrs</h6>
+                    
                     </div>
                 </div>
             </div>
-                
-            2.2<div>
-                <div>
-                    <div class="g">
-                        <h5 style="position: absolute;top: 1px;left: 10px;color: white;">Play</h5>
-                        <h1 style="position: absolute;left: 10px;top: 23px;color: white;">10hrs</h1>
-                        <h6 style="position: absolute;left: 10px;top: 58px;color: rgb(219, 207, 207);">Last work-8hrs</h6>
-                    </div>
-                    <div class="h"></div>
-                </div>
-                <div>
-                    <div class="i">
-                        <h5 style="position: absolute;left: 10px;top: 1px;color: white;">Social</h5>
-                        <h1 style="position: absolute;left: 10px;top: 23px;color: white;">5hrs</h1>
-                        <h6 style="position: absolute;left: 10px;top: 58px;color: rgb(219, 207, 207);">Last week-10hrs</h6>
-                    </div>
-                    <div class="j"></div>
-                </div>
-                3<div>
-                    3.1<div>
-                        <div class="k">
-                            <h5 style="position: absolute;left: 10px;top: 1px;color: white;">Study</h5>
-                            <h1 style="position: absolute;left: 10px;top: 23px;color: white;">4hrs</h1>
-                            <h6 style="position: absolute;left: 10px;top: 58px;color: rgb(219, 207, 207);">Last week-7hrs</h6>
-                        </div>
-                        <div class="l"></div>
-                    </div>
-                    <div>
-                        <div class="m">
-                            <h5 style="position: absolute;left: 10px;top: 1px;color: white;">Self Care</h5>
-                            <h1 style="position: absolute;left: 10px;top: 23px;color: white;">2hrs</h1>
-                            <h6 style="position: absolute;left: 10px;top: 58px;color: rgb(219, 207,207);">Last week-2hrs</h6>
-                        </div>
-                        <div class="n"></div>
-                    </div>
+            <div style="display: flex; flex-wrap: wrap;  gap: 20px;">
+                <div style="position: relative;top: 50px;">
+                    <div style="height: 200px;width: 200px;background-color: rgb(116, 240, 116);border-radius: 10px;"></div>
+                    <div style="height: 200px;width: 200px;background-color: blue;border-radius: 10px;position: absolute;top: 40px;">
+                       <h5 style="color: white;margin-left: 15px;">Excercise</h5>
+                       <h1 style="color: white;margin-left: 15px;">4hrs</h1>
+                       <h6 style="color: white;margin-left: 15px;">Last week-5hrs</h6>
                     
-                    
-                    
-
+                    </div>
                 </div>
-
+                <div style="position: relative;top: 50px;">
+                    <div style="height: 200px;width: 200px;background-color: purple;border-radius: 10px;"></div>
+                    <div style="height: 200px;width: 200px;background-color: blue;border-radius: 10px;position: absolute;top: 40px;">
+                       <h5 style="color: white;margin-left: 15px;">Social</h5>
+                       <h1 style="color: white;margin-left: 15px;">5hrs</h1>
+                       <h6 style="color: white;margin-left: 15px;">Last week-10hrs</h6>
+                    
+                    </div>
+                </div>
+                <div style="position: relative;top: 50px;">
+                    <div style="height: 200px;width: 200px;background-color: yellow;border-radius: 10px"></div>
+                    <div style="height: 200px;width: 200px;background-color: blue;border-radius: 10px;position: absolute;top: 40px;">
+                    <h5 style="color: white;margin-left: 15px;">Selfcare</h5>
+                    <h1 style="color: white;margin-left: 15px;">2hrs</h1>
+                    <h6 style="color: white;margin-left: 15px;">Last week-2hrs</h6>
+                    
+                    </div>
+                </div>
             </div>
-
         </div>
-    </div>
-    
-
+</div>
 </body>
 </html>

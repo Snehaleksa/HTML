@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0;
+        font-family: arail;
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      .column{
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      column img{
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      @media  screen and(max-width: 800px){
+        .column{
+          flex: 50%;
+          max-width: 50%;
+        }
+        
+      }
+      @media screen and(max-width:600px) {
+        .column{
+          flex: 100%;
+          max-width: 100%;
+        }
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="row"> 
+        <div class="column">
+          <img src="river1.jpg" style="width:100%">
+          <img src="river12..jpg" style="width:100%">
+          <img src="river13.jpg" style="width:100%">
+          <img src="river14.jpg" style="width:100%">
+          <img src="river15.jpg" style="width:100%">
+          <img src="river16.jpg" style="width:100%">
+          <img src="river4.jpg" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="river1.jpg" style="width:100%">
+          <img src="river16.jpg" style="width:100%">
+          <img src="river4.jpg" style="width:100%">
+          <img src="river5.jpg" style="width:100%">
+          <img src="river6.jpg" style="width:100%">
+          <img src="river14.jpg" style="width:100%">
+        </div> 
+         
+        <div class="column">
+          <img src="river14.jpg" style="width:100%">
+          <img src="river2.jpg" style="width:100%">
+          <img src="river1.jpg" style="width:100%">
+          <img src="river3.jpg" style="width:100%">
+          <img src="river5.jpg" style="width:100%">
+          <img src="river2.jpg" style="width:100%">
+          <img src="river3.jpg" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="river1.jpg" style="width:100%">
+          <img src="river2.jpg" style="width:100%">
+          <img src="river3.jpg" style="width:100%">
+          <img src="river5.jpg" style="width:100%">
+          <img src="river2.jpg" style="width:100%">
+          <img src="river1.jpg" style="width:100%">
+        </div>
+      </div>
+      
+</body>
+</html>
