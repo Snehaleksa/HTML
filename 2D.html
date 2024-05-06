@@ -6,16 +6,22 @@
     <title>Document</title>
     <style>
         div{
+            
             width: 100px;
             height: 100px;
             margin: 50px;
-            background-color: aqua;
-            border: 1px solid black;
-            transform: translate(50px,100px);
-        }    
+            transition: width 8s, height 8s,transform 8s;
+            animation-duration: 8s;
+            
+            
+        }
+        div:hover{
+            
+            transform: rotate(180deg);
+        }      
     </style>
 </head>
 <body>
-    <div>SNEHA</div>
+    <div><img src="shoe3.jpg" alt=""></div>
 </body>
 </html>
